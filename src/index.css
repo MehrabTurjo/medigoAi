@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  width: full-screen;
+}
+
+
+.background-container {
+  position: relative;
+  width: 100%; /* Adjust based on your needs */
+  height: 100vh; /* Adjust based on your needs */
+  overflow: hidden;
+}
+
+.background-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  object-position: center; /* Centers the image within the element */
+}
+
+.text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Ensures text is visible on darker images */
+  text-align: center; /* Centers text */
+  z-index: 10; /* Makes sure the text is on top */
+}
+
